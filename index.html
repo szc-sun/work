@@ -16,7 +16,7 @@
 					<li><a href="">海淘首页</a><span class="top_line"></span></li>
 					<li><a href="">关于我们</a></li>
 					<li class = "drop_con"><a href=""><span class= "fa fa-clock-o"></span>世界时间</a>
-						<ul class="dropdown-menu clear-fix  nav_dropdown_time" style="display:none;">
+						<ul class="dropdown-menu clear-fix  nav_dropdown_time">
 						<li id="localutc_time">本地时间：2018/6/28 上午9:05:45</li> 
 						<!--<li id="portland_time"></li> -->
 						<li id="losangeles_time">美国洛杉矶：2018年6月27日17:05:45</li> 
@@ -31,12 +31,40 @@
 				
 				
 				<ul class = "topR">
-					<li><a href=">我的转运<span class = "fa fa-sort-desc"></span></a></li>
+					<li class = "drop_con"><a href="">我的转运<span class = "fa fa-sort-desc"></span></a>
+						<ul class="dropdown-menu nav_dropdown_menu" >
+							<li><a href="//my.haitao.com/ship/" class=""><span class="fa fa-fw fa-bank"></span> 转运仓库</a></li>
+							<li><a href="//my.haitao.com/ship/yubao.php" class=""><span class="fa fa-fw fa-bullhorn"></span> 到货预报</a></li>
+							<li><a href="//my.haitao.com/ship/product.php" class=""><span class="fa fa-fw fa-cube"></span> 包裹管理</a></li>
+							<li><a href="//my.haitao.com/ship/order.php" class=""><span class="fa fa-fw fa-paper-plane"></span> 转运订单</a></li>
+							<li><a href="//my.haitao.com/ship/renling.php" class=""><span class="fa fa-fw fa-podcast"></span> 包裹认领</a></li>
+						</ul>
+					</li>
 					<li><a href="">我的团购</a><span class="top_line"></span></li>
-					<li><a href="">我的返利<span class = "fa fa-sort-desc"></span></a></li>
-					<li><a href="">分享收藏<span class = "fa fa-sort-desc"></span></a></li>
+					<li class = "drop_con"><a href="">我的返利<span class = "fa fa-sort-desc"></span></a>
+						<ul class="dropdown-menu nav_dropdown_menu">
+							<li><a href="//my.haitao.com/hongbao/" class=""><span class="fa fa-fw fa-money"></span> 返利打赏</a></li>
+							<li><a href="//my.haitao.com/hongbao/?type=2" class=""><span class="fa fa-fw fa-gift"></span> 转运红包</a></li>
+							<li><a href="//www.haitao.com/share/288703.html"><span class="fa fa-fw fa-book"></span> 返利攻略</a></li>
+							<li><a href="//my.haitao.com/hongbao/?type=3" class=""><span class="fa fa-fw fa-users"></span> 我的邀请</a></li>
+						</ul>
+					</li>
+					<li class = "drop_con"><a href="">分享收藏<span class = "fa fa-sort-desc"></span></a>
+						<ul class="dropdown-menu nav_dropdown_menu">
+							<li><a href="//my.haitao.com/share/"><span class="fa fa-fw fa-book"></span> 我的分享</a></li>
+							<li><a href="//www.haitao.com/share/edit.php"><span class="fa fa-fw fa-edit"></span> 写分享</a></li>
+							<li><a href="//www.haitao.com/collect/" class="header_top_line"><span class="fa fa-fw fa-star"></span> 我的收藏</a></li>
+						</ul>
+					</li>
 					<li><a href="">注册</a><span class="top_line"></span></li>
-					<li><a href="">登录<span class = "fa fa-sort-desc"></span></a></li>
+					<li class = "drop_con"><a href="">登录<span class = "fa fa-sort-desc"></span></a>
+						<ul class="dropdown-menu nav_dropdown_menu">
+							<li><a href="//my.haitao.com/login/?url="><span class="fa fa-user  fa-fw"></span> 会员登录</a></li>
+							<li> <a href="//my.haitao.com/login/sso/login.php?t=xss" target="_blank"><span class="fa fa-weixin fa-fw"></span> 微信登录</a></li>
+							<li><a href="//my.haitao.com/login/sso/login.php?t=bss"><span class="fa fa-weibo fa-fw"></span> 微博登录</a></li>
+							<li><a href="//my.haitao.com/login/sso/login.php?t=qss" target="_blank"><span class="fa fa-qq fa-fw"></span> QQ登录</a></li>
+						</ul>
+					</li>
 				</ul>			
 			</div>
 		</div>
@@ -66,7 +94,37 @@
 			<div class="nav_con clear-fix">
 				<ul class = "navL">
 					<li  class ="self"><a href="#">首页</a></li>
-					<li><a href="">海淘团购</a></li>
+					<li class = "drop_con"><a href="">海淘团购</a>
+						<ul class="tuan_category_ul dropdown-menu">
+							<li class="list-group-item">
+								<a href="/tuan/product/?cid=409" target="_blank"><i class="fa fa-fw fa-child"></i>育儿<span class="pull-right"><i class=" fa fa-angle-right"></i></span></a>
+							</li>
+							<li class="list-group-item">
+								<a href="/tuan/product/?cid=431" target="_blank"><i class="fa fa-fw fa-leaf"></i>保健<span class="pull-right"><i class=" fa fa-angle-right"></i></span></a>
+							</li>
+							<li class="list-group-item">
+								<a href="/tuan/product/?cid=384" target="_blank"><i class="fa fa-fw fa-female"></i>美妆<span class="pull-right"><i class=" fa fa-angle-right"></i></span></a>
+							</li>
+							<li class="list-group-item">
+								<a href="/tuan/product/?cid=360" target="_blank"><i class="fa fa-fw fa-ravelry"></i>生活<span class="pull-right"><i class=" fa fa-angle-right"></i></span></a>
+							</li>
+							<li class="list-group-item">
+								<a href="/tuan/product/?cid=498" target="_blank">
+							<i class="fa fa-fw fa-shopping-bag"></i>箱包<span class="pull-right"><i class=" fa fa-angle-right"></i></span></a>
+							</li>
+							<li class="list-group-item">
+								<a href="/tuan/product/?cid=465" target="_blank"><i class="fa fa-fw fa-paw"></i>鞋子<span class="pull-right"><i class=" fa fa-angle-right"></i></span></a>
+							</li>
+							<li class="list-group-item">
+								<a href="/tuan/product/?cid=428" target="_blank"><i class="fa fa-fw fa-tachometer"></i> 美食<span class="pull-right"><i class=" fa fa-angle-right"></i></span></a>
+							</li>
+							<li class="list-group-item">
+								<a href="/tuan/product/?cid=378" target="_blank"><i class="fa fa-fw fa-empire"></i> 潮流<span class="pull-right"><i class=" fa fa-angle-right"></i></span></a>
+							</li>
+						
+						</ul>
+					</li>
+					
 					<li><a href="">全球值得买</a></li>
 					<li><a href="">海淘返利</a></li>
 					<li><a href="">全球转运</a></li>
@@ -87,6 +145,7 @@
 				<li class = "li3"><a href=""></a></li>
 				<li class = "li4"><a href=""></a></li>
 				<li class = "li5"><a href=""></a></li>
+				<li class = "li6"><a href=""></a></li>
 			</ul>			
 		</div>
 		

@@ -57,10 +57,10 @@ Slider.prototype = {
 	slide : function(){
 		for(var i = 0;i < this.num;i ++){
 			this.ullis[i].style.display = 'none';
-			this.ollis[i].style.background = 'red';
+			this.ollis[i].style.background = '#656565';
 		}
 		this.ullis[this.indexA].style.display = 'block';
-		this.ollis[this.indexA].style.background = 'blue';
+		this.ollis[this.indexA].style.background = '#da6f13';
 		
 	},
 	addEvent : function(){
@@ -108,3 +108,5 @@ Slider.prototype = {
 		}
 	}
 }
+
+
