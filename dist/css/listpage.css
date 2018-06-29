@@ -1,0 +1,106 @@
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img, input, figure {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background: #eee;
+  font-family: Arial,'Times New Roman','Microsoft YaHei',SimHei;
+  min-width: 840px; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  font-size: 16px; }
+
+b, strong {
+  font-weight: normal; }
+
+em, i {
+  font-style: normal; }
+
+img {
+  border: 0;
+  display: inline-block; }
+
+ul, ol, li {
+  list-style: none; }
+
+input {
+  outline: none; }
+
+a:hover {
+  text-decoration: none !important; }
+
+#top {
+  height: 32px;
+  background: #333; }
+  #top li {
+    float: left;
+    padding: 6px 0 5px;
+    color: #ccc; }
+    #top li a {
+      color: #ccc;
+      padding: 0 10px; }
+    #top li .top_line {
+      border-right: 1px solid #222; }
+    #top li .dropdown-menu {
+      width: 200px;
+      position: absolute;
+      top: 32px;
+      z-index: 10;
+      background: #fff;
+      display: none; }
+      #top li .dropdown-menu a {
+        color: #585b48; }
+
+/*logo*/
+#logo_box {
+  width: 100%;
+  background: #fff; }
+  #logo_box .logo {
+    height: 100px;
+    width: 90%;
+    background: #fff;
+    margin: 0 auto; }
+    #logo_box .logo .logo_con {
+      float: left;
+      width: 20%;
+      margin-top: 20px; }
+    #logo_box .logo .select {
+      float: right;
+      margin: 20px 5% 0 0;
+      width: 65%; }
+      #logo_box .logo .select .btn2 {
+        float: right;
+        margin-right: 10px;
+        height: 32px;
+        width: 86px;
+        color: #fff;
+        background: #de3c5b;
+        border: 0;
+        border-radius: 16px; }
+      #logo_box .logo .select .btn1 {
+        height: 32px;
+        background: #de3c5b;
+        border: 0;
+        width: 80px;
+        color: #fff; }
+      #logo_box .logo .select .btn1, #logo_box .logo .select .btn2:hover {
+        cursor: pointer; }
+      #logo_box .logo .select a {
+        font-size: 12px;
+        padding: 0 5px; }
+      #logo_box .logo .select .a_boder {
+        border-right: 1px solid #d00; }
+      #logo_box .logo .select .select_box {
+        width: 70%;
+        float: right; }
+        #logo_box .logo .select .select_box p {
+          font-size: 14px;
+          color: #888; }
+          #logo_box .logo .select .select_box p a {
+            font-size: 12px;
+            color: #888; }
+        #logo_box .logo .select .select_box input {
+          width: 75%;
+          height: 30px;
+          border: 1px solid #d00; }
