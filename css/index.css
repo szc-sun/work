@@ -19,23 +19,27 @@ input{outline:none;}
 .topL .dropdown-menu{width:200px;position: absolute;top:32px;z-index:10;background:#fff;display:none}
 .topR .dropdown-menu{width:120px;position: absolute;top:32px;z-index:10;background:#fff;display:none}
 .topR .dropdown-menu li{width:118px}
-.dropdown-menu li{border-top:1px solid #eee;border-bo:1px solid #eee;}
+.dropdown-menu li{border-top:1px solid #eee;border-bottom:1px solid #eee;}
 #top .dropdown-menu a{color:#585b48;}
 #top .topR{float:right;}
 #top li{float:left;padding:6px 0 5px}
 
 /*logo*/
-
+#logo_box{width:100%;background:#fff;}
 .logo{height:100px;width:90%;background:#fff;margin:0 auto;}
 .logo_con{float:left;width:20%;margin:20px 0 0 5%;}
-.select{float:right;margin:20px 5% 0 0;width:60%;}
-.btn2{float:right;margin-right: 30px;height:32px;width:20%;background: #d00;border:0;border-radius:16px;}
-.select a{font-size:12px;padding:0 10px;}
+.select{float:right;margin:20px 5% 0 0;width:65%;}
+.btn2{float:right;margin-right: 10px;height:32px;width:86px;color:#fff;background: #de3c5b;border:0;border-radius:16px;}
+#tuan_car_num{display:inline-block;height:16px;width:16px;background:#fff;color:#de3c5b;border-radius:10px;}
+.select a{font-size:12px;padding:0 5px;}
 .select .a_boder{border-right:1px solid #d00;}
-.select_box,btn2{float:right}
-.select_box input{width:80%;height:30px;border:1px solid #d00;}
-.btn1{height:32px;background: #d00;border:0;width:15%;}
-
+.select_box{width:70%;}
+.select_box p{font-size:14px;color:#888}
+.select_box p a{font-size:12px;color:#888}
+.select_box,btn2{float:right;}
+.select_box input{width:75%;height:30px;border:1px solid #d00;}
+.btn1{height:32px;background: #de3c5b;border:0;width:80px;color:#fff;}
+.btn1,.btn2:hover{cursor:pointer;}
 /*nav*/
 #nav{height:40px;background:#de3c5b;}
 #nav .nav_con{height:40px;line-height:40px;width:90%;margin:0 auto;}
@@ -47,9 +51,12 @@ input{outline:none;}
 .nav_con li:hover{background:#bf0024}
 .nav_con .self{background:#bf0024}
 
-.tuan_category_ul{border:1px solid #eee;width:120px;position: absolute;top:40px;z-index:10;background:#fff;display:none}
-.tuan_category_ul li{width:118px;}
-.list-group-item{background:#de3c5b;}
+.tuan_category_ul{border:1px solid #eee;width:120px;position:absolute;top:40px;z-index:10;background:#fff;display:none}
+.list-group-item{background:#de3c5b;width:120px;text-align:center}
+.global{border:1px solid #eee;width:120px;position:absolute;top:40px;z-index:10;background:#fff;display:none}
+.rebate_group{border:1px solid #eee;width:120px;position:absolute;top:40px;z-index:10;background:#fff;display:none}
+/*.list-group-item a{display:inline-block;width:120px;text-align:center}*/
+
 
 /*banner*/
 .banner{display:block;overflow:hidden;height:360px;position:relative;width:100%}
@@ -125,10 +132,10 @@ ol li{
 
 /*GS*/
 
-.GS{width:90%;background:yellow;margin:0 auto;text-align:center;}
+.GS{width:91%;margin:0 auto;text-align:center;}
 .GS span{display:inline-block;height:30px;width:136px;border-radius:8px;background:#15c7bb;color:#ffffff;font-size:16px;line-height:30px;text-align:center;margin:16px 0 16px;}
 .GS span:hover{width:180px;font-size:24px;color:red;background:#ccc;}
-.GS_con{margin:0 56px 0 56px}
+/*.GS_con{margin:0 56px 0 56px}*/
 .goods{position:relative;float:left;height:270px;width:24%;background: #FFFFFF;margin:0 0.5% 10px 0.5%;text-align:left;}
 .goods img{width:100%;height:210px}
 .goods a{font-size:14px;color:#e93b78}
@@ -144,7 +151,7 @@ ol li{
 .newsL h2{height:50px;width:100%;border-bottom:1px solid #eee;overflow: hidden;}
 .newsL h2 span{float:left;font-size:18px;margin:10px 0 10px 10px;}
 .newsL h2 a{height:30px;line-height:30px;text-align:center;width:80px;border-radius:6px;float:right;font-size:12px;background:#d9534f;color:#ffffff;margin:10px 10px 0 0;}
-.newsL_box{width:90%;padding:16px 5% 16px;border-bottom:1px solid #eee;}
+.newsL_box{height:183px;width:90%;padding:16px 5% 16px;border-bottom:1px solid #eee;}
 .newsL_img{width:27%;float:left;margin:0 10px 0;}
 .newsL_img img{width:100%;}
 
@@ -155,12 +162,12 @@ ol li{
 .newsL_con h3 .b2{float:left;font-size:12px;width:50px;text-align:center;background:#e22f2f;border-radius:0 10px 10px 0;color:#fff;}
 .newsL_con h4{line-height:24px;height:48px;overflow:hidden;}
 .newsL_con h4 a .text-red{color:#e93b78;}
-.newsL_con p{font-size:12px;color:#777777;line-height:20px;height:40px;overflow:hidden;margin:10px 0 10px;}
+.newsL_con p{font-size:12px;color:#777777;line-height:20px;height:40px;overflow:hidden;margin:10px 0 15px;}
 .newsL_con h5{color:#999999;font-size:12px;}
 .newsL_con h5 a{color:#999999;}
 .newsL_con h5 div{height:28px;width:80px;text-align:center;line-height:28px;border-radius:5px;float:right;background:#e2302f;}
 .newsL_con h5 div a{color:#fff;}
-
+.btn:hover{color:#FFFF00;font-size:14px;}
 /*R*/
 .newsR h2{height:32px;font-size:18px;background:#fff;border-bottom:1px solid #eee;padding-left:15px;padding-top:18px}
 .newsR h2 span{width:64px;font-size:14px;border-radius:5px;background:#ff4c66;color:#fff;margin-left:15px}
@@ -209,6 +216,4 @@ ol li{
 .foot_box p{width:100%;text-align:center;margin-bottom:14px;font-size:14px;color:#fff;}
 .foot_box p img{display:inline-block;height:20px;}
 .foot_box p a{color:#fff;}
-
-
 

@@ -112,11 +112,44 @@ $.each($dls,function(index,value){
 		$("<div>", {
   		"class": "test",
   		text: "全球海淘精选",
-  		"style":"color:#fff;position:absolute;width:100%;height:50px;background: rgba(0,0,0,.5);left:0;top:0;text-align:center;line-height:50px;"
-	}).appendTo($(value));	
+  		"style":"color:#fff;position:absolute;width:100%;height:50px;background: rgba(220,60,90,.5);left:0;top:0;text-align:center;line-height:50px;"
+		}).appendTo($(value));	
 	});
 	$(value).mouseout(function(){
-		$(".test").remove();
+		$(".test").slideUp(1000,function(){
+			$(this).remove();
+		})
 	});
 	
+})
+
+
+//回到顶部
+$(document).scroll(function(){
+	var $scroll = $(this).scrollTop();
+	if($scroll >= 400){
+		$(".backToTop").css("display","block");
+	}else{
+		$(".backToTop").css("display","none");
+	}
+	
+})
+$("<div>", {
+  		"class": "backToTop",
+  		"style":"position: fixed;right: 10px;bottom: 10%;width: 40px;height: 40px;line-height: 40px;opacity: 0.9;border-radius: 20px;color: #fff;text-align: center;background: #000;cursor: pointer;z-index: 1000;overflow: hidden;display:none;"
+		}).appendTo($("body"));
+$("<span>",{
+	"class":"fa fa-chevron-up"				
+}).appendTo($(".backToTop"))
+
+
+$(".backToTop").click(function(){
+	$(document).scrollTop(0);
+})
+
+//划过变色
+$(".select a").hover(function(){
+	$(this).css({"color":"red","font-size":"16px"});
+},function(){
+	$(this).css({"color":"#888","font-size":"12px"});
 })
