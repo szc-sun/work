@@ -2,23 +2,19 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
 		<title>列表页</title>
 		<link rel="stylesheet" href="dist/css/listpage.css" />
 		<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css"/>
-		<link rel="stylesheet" href="css/bootstrap.min.css">
-		<script src = "js/jquery-1.11.3.js"></script>
-		
+		<script src = "js/jquery-1.11.3.js"></script>		
 	</head>
 	<body>
 		<!--top-->
 		<div id = "top">
-			<div class = "container top_box clear-fix">
-				<ul class = "topL pull-left">
+			<div class = "top_box clear-fix">
+				<ul class = "topL">
 					<li><a href="">海淘首页</a><span class="top_line"></span></li>
 					<li><a href="">关于我们</a></li>
-					<li class = "drop_con"><a href=""><span class= "fa fa-clock-o"></span>世界时间</a>
+					<li class = "drop_con show_time"><a href=""><span class= "fa fa-clock-o"></span>世界时间</a>
 						<ul class="dropdown-menu clear-fix  nav_dropdown_time">
 						<li id="localutc_time">本地时间：2018/6/28 上午9:05:45</li> 
 						<!--<li id="portland_time"></li> -->
@@ -28,12 +24,11 @@
 						<li id="sydney_time">澳洲悉尼：2018年6月28日12:05:45</li>
 						<li id="london_time">英国伦敦：2018年6月28日 2:05:45</li> 
 					</ul>
-					</li>
-					
+					</li>					
 				</ul>
 				
 				
-				<ul class = "topR pull-right">
+				<ul class = "topR">
 					<li class = "drop_con"><a href="">我的转运<span class = "fa fa-sort-desc"></span></a>
 						<ul class="dropdown-menu nav_dropdown_menu" >
 							<li><a href="//my.haitao.com/ship/" class=""><span class="fa fa-fw fa-bank"></span> 转运仓库</a></li>
@@ -71,11 +66,12 @@
 				</ul>			
 			</div>
 		</div>
+			
 		<!--logo-->
 		<div id = "logo_box">
 			<div class = "logo clear-fix">
 				<div class = "logo_con"><a href=""><img src="images/logo.png" alt="" /></a></div>
-				<form action="" class= "select clear-fix pull-right">
+				<form action="" class= "select clear-fix">
 					<button class = "btn2"><span class="fa fa-cart-plus fa-lg"></span>购物车<span id="tuan_car_num" class="badge">11</span></button>
 					<div class = "select_box">
 						<input type="text" placeholder="搜索全球"/><button class="btn1"><span class="fa fa-search"></span></button>
@@ -91,7 +87,360 @@
 					
 			</div>
 		</div>
-		<!--nav-->
 		
+		
+		<!--nav-->
+		<div id="nav">
+			<div class="nav_con clear-fix">
+				<ul class = "nav_box clear-fix">
+					<li class = "drop_con tuan_index"><a href="listpage.html">团购首页</a>
+						<ul class="tuan_category_ul dropdown-menu">
+							<li class="list-group-item">
+								<a href="#" target="_blank"><i class="fa fa-fw fa-child"></i>育儿<span class="pull-right"><i class=" fa fa-angle-right"></i></span></a>
+							</li>
+							<li class="list-group-item">
+								<a href="#" target="_blank"><i class="fa fa-fw fa-leaf"></i>保健<span class="pull-right"><i class=" fa fa-angle-right"></i></span></a>
+							</li>
+							<li class="list-group-item">
+								<a href="#" target="_blank"><i class="fa fa-fw fa-female"></i>美妆<span class="pull-right"><i class=" fa fa-angle-right"></i></span></a>
+							</li>
+							<li class="list-group-item">
+								<a href="#" target="_blank"><i class="fa fa-fw fa-ravelry"></i>生活<span class="pull-right"><i class=" fa fa-angle-right"></i></span></a>
+							</li>
+							<li class="list-group-item">
+								<a href="#" target="_blank"><i class="fa fa-fw fa-shopping-bag"></i>箱包<span class="pull-right"><i class=" fa fa-angle-right"></i></span></a>
+							</li>
+							<li class="list-group-item">
+								<a href="#" target="_blank"><i class="fa fa-fw fa-paw"></i>鞋子<span class="pull-right"><i class=" fa fa-angle-right"></i></span></a>
+							</li>
+							<li class="list-group-item">
+								<a href="#" target="_blank"><i class="fa fa-fw fa-tachometer"></i> 美食<span class="pull-right"><i class=" fa fa-angle-right"></i></span></a>
+							</li>
+							<li class="list-group-item">
+								<a href="#" target="_blank"><i class="fa fa-fw fa-empire"></i> 潮流<span class="pull-right"><i class=" fa fa-angle-right"></i></span></a>
+							</li>
+						
+						</ul>
+					</li>
+					<li><a href="//www.haitao.com/tuan/daren/">达人专享</a></li>
+					<li><a href="//www.haitao.com/tuan/area/?id=1">美国馆</a></li>
+					<li><a href="//www.haitao.com/tuan/area/?id=12">澳洲馆</a></li>
+					<li><a href="//www.haitao.com/tuan/area/?id=5">德国馆</a></li>
+					<li><a href="//www.haitao.com/tuan/area/?id=14">荷兰馆</a></li>
+					<li><a href="//www.haitao.com/tuan/area/?id=2">中国馆</a></li>
+					<li><a href="//www.haitao.com/tuan/area/?id=3">韩国馆</a></li>
+					<li><a href="//www.haitao.com/tuan/area/?id=9">香港馆</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<!--list-->
+		<div class = "list clear-fix">
+			<div class = "list_head">
+				<h2 class="panel-heading">
+					育儿精选团购商品 <span>985个</span>
+				</h2>
+				
+				<div class="p_box">
+					<p class="tuan_product_nav">商品分类：
+						<a href="/tuan/product/?aid=0&amp;sort=0" class="">所有</a>
+						<a href="/tuan/product/?cid=409&amp;aid=0&amp;sort=0" class="active">育儿</a>
+						<a href="/tuan/product/?cid=431&amp;aid=0&amp;sort=0" class="">保健</a>
+						<a href="/tuan/product/?cid=384&amp;aid=0&amp;sort=0" class="">美妆</a>
+						<a href="/tuan/product/?cid=360&amp;aid=0&amp;sort=0" class="">生活</a>
+						<a href="/tuan/product/?cid=498&amp;aid=0&amp;sort=0" class="">箱包</a>
+						<a href="/tuan/product/?cid=465&amp;aid=0&amp;sort=0" class="">鞋子</a>
+						<a href="/tuan/product/?cid=499&amp;aid=0&amp;sort=0" class="">手表</a>
+						<a href="/tuan/product/?cid=333&amp;aid=0&amp;sort=0" class="">数码</a>
+						<a href="/tuan/product/?cid=576&amp;aid=0&amp;sort=0" class="">玩具</a>
+						<a href="/tuan/product/?cid=428&amp;aid=0&amp;sort=0" class="">食品</a>
+						<a href="/tuan/product/?cid=497&amp;aid=0&amp;sort=0" class="">家电</a>
+						<a href="/tuan/product/?cid=577&amp;aid=0&amp;sort=0" class="">时尚</a>
+						<a href="/tuan/product/?cid=378&amp;aid=0&amp;sort=0" class="">服装</a>
+						<a href="/tuan/product/?cid=581&amp;aid=0&amp;sort=0" class="">钱包</a>
+						<a href="/tuan/product/?cid=579&amp;aid=0&amp;sort=0" class="">男士</a>
+						<a href="/tuan/product/?cid=470&amp;aid=0&amp;sort=0" class="">运动</a>
+						<a href="/tuan/product/?cid=580&amp;aid=0&amp;sort=0" class="">小包</a>
+					</p>
+					
+					<p class="tuan_product_nav">发货地区：
+						<a href="/tuan/product/?cid=409&amp;sort=0" class="active">所有</a>
+						<a href="/tuan/product/?aid=1&amp;cid=409&amp;sort=0" class="">美国</a>
+						<a href="/tuan/product/?aid=12&amp;cid=409&amp;sort=0" class="">澳洲</a>
+						<a href="/tuan/product/?aid=2&amp;cid=409&amp;sort=0" class="">中国</a>
+						<a href="/tuan/product/?aid=14&amp;cid=409&amp;sort=0" class="">荷兰</a>
+						<a href="/tuan/product/?aid=6&amp;cid=409&amp;sort=0" class="">英国</a>
+						<a href="/tuan/product/?aid=5&amp;cid=409&amp;sort=0" class="">德国</a>
+						<a href="/tuan/product/?aid=9&amp;cid=409&amp;sort=0" class="">香港</a>
+						<a href="/tuan/product/?aid=4&amp;cid=409&amp;sort=0" class="">日本</a>
+						<a href="/tuan/product/?aid=3&amp;cid=409&amp;sort=0" class="">韩国</a>
+						<a href="/tuan/product/?aid=11&amp;cid=409&amp;sort=0" class="">意大利</a>
+						<a href="/tuan/product/?aid=15&amp;cid=409&amp;sort=0" class="">加拿大</a>
+						<a href="/tuan/product/?aid=21&amp;cid=409&amp;sort=0" class="">新加坡</a>
+					</p>
+					
+					
+					<p class="tuan_product_nav">热门品牌：
+						<a href="/tuan/product/?aid=0&amp;cid=409&amp;sort=0" class="active">所有</a>
+						<a href="/tuan/product/?aid=0&amp;bid=23&amp;cid=409&amp;sort=0" class="">努比</a>
+						<a href="/tuan/product/?aid=0&amp;bid=19&amp;cid=409&amp;sort=0" class="">麦肯齐</a>
+						<a href="/tuan/product/?aid=0&amp;bid=22&amp;cid=409&amp;sort=0" class="">Boon</a>
+						<a href="/tuan/product/?aid=0&amp;bid=34&amp;cid=409&amp;sort=0" class="">嘉宝</a>
+						<a href="/tuan/product/?aid=0&amp;bid=39&amp;cid=409&amp;sort=0" class="">可么多么</a>
+						<a href="/tuan/product/?aid=0&amp;bid=11&amp;cid=409&amp;sort=0" class="">加州宝宝</a>
+						<a href="/tuan/product/?aid=0&amp;bid=16&amp;cid=409&amp;sort=0" class="">挪威小鱼</a>
+						<a href="/tuan/product/?aid=0&amp;bid=122&amp;cid=409&amp;sort=0" class="">Skip Hop</a>
+						<a href="/tuan/product/?aid=0&amp;bid=7&amp;cid=409&amp;sort=0" class="">童年时光</a>
+						<a href="/tuan/product/?aid=0&amp;bid=15&amp;cid=409&amp;sort=0" class="">香蕉宝宝</a>
+					</p>
+					
+					<p class="tuan_product_nav">商品排序：
+						<a href="?cid=409&amp;aid=0" class="active">默认</a>
+						<a href="?cid=409&amp;aid=0&amp;sort=2" class="">热门</a>
+						<a href="?cid=409&amp;aid=0&amp;sort=1" class="">新品</a>
+						<a href="?cid=409&amp;aid=0&amp;sort=3" class="">便宜</a>
+						<a href="?cid=409&amp;aid=0&amp;sort=4" class="">包邮</a>
+					</p>
+					
+				</div>
+				
+			</div>
+			<!--商品图片文字-->
+			<div class = "tuan_list clear-fix">
+				<div class ="list_box clear-fix">
+					<!--1-->
+					<dl class = "item clear-fix">
+						<dt class = "pic clear-fix">
+							<a href="#" target="_blank"><img src="images/listpage/1.jpg"  class="list_img" style="display: block;"></a>
+							<span class="free_ship_tips">包邮</span>
+						</dt>
+						<dd class = "list_intr">
+							<h3 class = title>
+								<a href="" target="_blank"><div class="text_red text-cut">2段奶粉 6罐整箱 包邮包税 </div>澳洲 BELLAMY S 贝拉米有机奶粉2段 6个月以上 900g*6罐 整箱</a>
+								
+							</h3>
+							<h4>
+								<a href="/tuan/store/1984/" target="_blank">海淘网澳洲</a>&nbsp;
+<span>澳洲</span>
+							</h4>
+							<h5>
+								<span class="flash_price">￥1250</span>
+								<span class="daren-price"><i class="fa fa-vimeo text-gold"></i> 1199元</span>
+							</h5>
+						</dd>
+					</dl>
+					
+					
+					<!--2-->
+					<dl class = "item">
+						<dt class = "pic">
+							<a href="#" target="_blank"><img src="images/listpage/1.jpg"  class="list_img" style="display: block;"></a>
+							<span class="free_ship_tips">包邮</span>
+						</dt>
+						<dd class = "list_intr">
+							<h3 class = title>
+								<a href="" target="_blank"><div class="text_red text-cut">2段奶粉 6罐整箱 包邮包税 </div>澳洲 BELLAMY S 贝拉米有机奶粉2段 6个月以上 900g*6罐 整箱</a>
+								
+							</h3>
+							<h4>
+								<a href="/tuan/store/1984/" target="_blank">海淘网澳洲</a>&nbsp;
+<span>澳洲</span>
+							</h4>
+							<h5>
+								<span class="flash_price">￥1250</span>
+								<span class="daren-price"><i class="fa fa-vimeo text-gold"></i> 1199元</span>
+							</h5>
+						</dd>
+					</dl>
+					
+					
+					<!--3-->
+					<dl class = "item">
+						<dt class = "pic">
+							<a href="#" target="_blank"><img src="images/listpage/1.jpg"  class="list_img" style="display: block;"></a>
+							<span class="free_ship_tips">包邮</span>
+						</dt>
+						<dd class = "list_intr">
+							<h3 class = title>
+								<a href="" target="_blank"><div class="text_red text-cut">2段奶粉 6罐整箱 包邮包税 </div>澳洲 BELLAMY S 贝拉米有机奶粉2段 6个月以上 900g*6罐 整箱</a>
+								
+							</h3>
+							<h4>
+								<a href="/tuan/store/1984/" target="_blank">海淘网澳洲</a>&nbsp;
+<span>澳洲</span>
+							</h4>
+							<h5>
+								<span class="flash_price">￥1250</span>
+								<span class="daren-price"><i class="fa fa-vimeo text-gold"></i> 1199元</span>
+							</h5>
+						</dd>
+					</dl>
+					
+					
+					<!--4-->
+					<dl class = "item">
+						<dt class = "pic">
+							<a href="#" target="_blank"><img src="images/listpage/1.jpg"  class="list_img" style="display: block;"></a>
+							<span class="free_ship_tips">包邮</span>
+						</dt>
+						<dd class = "list_intr">
+							<h3 class = title>
+								<a href="" target="_blank"><div class="text_red text-cut">2段奶粉 6罐整箱 包邮包税 </div>澳洲 BELLAMY S 贝拉米有机奶粉2段 6个月以上 900g*6罐 整箱</a>
+								
+							</h3>
+							<h4>
+								<a href="/tuan/store/1984/" target="_blank">海淘网澳洲</a>&nbsp;
+<span>澳洲</span>
+							</h4>
+							<h5>
+								<span class="flash_price">￥1250</span>
+								<span class="daren-price"><i class="fa fa-vimeo text-gold"></i> 1199元</span>
+							</h5>
+						</dd>
+					</dl>
+					
+					
+					<!--5-->
+					
+					<dl class = "item">
+						<dt class = "pic">
+							<a href="#" target="_blank"><img src="images/listpage/1.jpg"  class="list_img" style="display: block;"></a>
+							<span class="free_ship_tips">包邮</span>
+						</dt>
+						<dd class = "list_intr">
+							<h3 class = title>
+								<a href="" target="_blank"><div class="text_red text-cut">2段奶粉 6罐整箱 包邮包税 </div>澳洲 BELLAMY S 贝拉米有机奶粉2段 6个月以上 900g*6罐 整箱</a>
+								
+							</h3>
+							<h4>
+								<a href="/tuan/store/1984/" target="_blank">海淘网澳洲</a>&nbsp;
+<span>澳洲</span>
+							</h4>
+							<h5>
+								<span class="flash_price">￥1250</span>
+								<span class="daren-price"><i class="fa fa-vimeo text-gold"></i> 1199元</span>
+							</h5>
+						</dd>
+					</dl>
+					
+					
+					<!--6-->
+					<dl class = "item">
+						<dt class = "pic">
+							<a href="#" target="_blank"><img src="images/listpage/1.jpg"  class="list_img" style="display: block;"></a>
+							<span class="free_ship_tips">包邮</span>
+						</dt>
+						<dd class = "list_intr">
+							<h3 class = title>
+								<a href="" target="_blank"><div class="text_red text-cut">2段奶粉 6罐整箱 包邮包税 </div>澳洲 BELLAMY S 贝拉米有机奶粉2段 6个月以上 900g*6罐 整箱</a>
+								
+							</h3>
+							<h4>
+								<a href="/tuan/store/1984/" target="_blank">海淘网澳洲</a>&nbsp;
+<span>澳洲</span>
+							</h4>
+							<h5>
+								<span class="flash_price">￥1250</span>
+								<span class="daren-price"><i class="fa fa-vimeo text-gold"></i> 1199元</span>
+							</h5>
+						</dd>
+					</dl>
+					<!--7-->
+					<dl class = "item">
+						<dt class = "pic">
+							<a href="#" target="_blank"><img src="images/listpage/1.jpg"  class="list_img" style="display: block;"></a>
+							<span class="free_ship_tips">包邮</span>
+						</dt>
+						<dd class = "list_intr">
+							<h3 class = title>
+								<a href="" target="_blank"><div class="text_red text-cut">2段奶粉 6罐整箱 包邮包税 </div>澳洲 BELLAMY S 贝拉米有机奶粉2段 6个月以上 900g*6罐 整箱</a>
+								
+							</h3>
+							<h4>
+								<a href="/tuan/store/1984/" target="_blank">海淘网澳洲</a>&nbsp;
+<span>澳洲</span>
+							</h4>
+							<h5>
+								<span class="flash_price">￥1250</span>
+								<span class="daren-price"><i class="fa fa-vimeo text-gold"></i> 1199元</span>
+							</h5>
+						</dd>
+					</dl>
+					
+					
+					<!--8-->
+					<dl class = "item">
+						<dt class = "pic">
+							<a href="#" target="_blank"><img src="images/listpage/1.jpg"  class="list_img" style="display: block;"></a>
+							<span class="free_ship_tips">包邮</span>
+						</dt>
+						<dd class = "list_intr">
+							<h3 class = title>
+								<a href="" target="_blank"><div class="text_red text-cut">2段奶粉 6罐整箱 包邮包税 </div>澳洲 BELLAMY S 贝拉米有机奶粉2段 6个月以上 900g*6罐 整箱</a>
+								
+							</h3>
+							<h4>
+								<a href="/tuan/store/1984/" target="_blank">海淘网澳洲</a>&nbsp;
+<span>澳洲</span>
+							</h4>
+							<h5>
+								<span class="flash_price">￥1250</span>
+								<span class="daren-price"><i class="fa fa-vimeo text-gold"></i> 1199元</span>
+							</h5>
+						</dd>
+					</dl>
+					
+					
+					<!--9-->
+					<dl class = "item">
+						<dt class = "pic">
+							<a href="#" target="_blank"><img src="images/listpage/1.jpg"  class="list_img" style="display: block;"></a>
+							<span class="free_ship_tips">包邮</span>
+						</dt>
+						<dd class = "list_intr">
+							<h3 class = title>
+								<a href="" target="_blank"><div class="text_red text-cut">2段奶粉 6罐整箱 包邮包税 </div>澳洲 BELLAMY S 贝拉米有机奶粉2段 6个月以上 900g*6罐 整箱</a>
+								
+							</h3>
+							<h4>
+								<a href="/tuan/store/1984/" target="_blank">海淘网澳洲</a>&nbsp;
+<span>澳洲</span>
+							</h4>
+							<h5>
+								<span class="flash_price">￥1250</span>
+								<span class="daren-price"><i class="fa fa-vimeo text-gold"></i> 1199元</span>
+							</h5>
+						</dd>
+					</dl>
+					
+					
+					<!--10-->
+					
+					
+					
+					
+					
+				</div>
+				
+			</div>
+				
+		</div>
+		
+		
+		
+		<!--foot-->
+		<div id = "foot">
+			<div class = "foot_box">
+				<p><a href="#">关于我们</a>&nbsp;&nbsp; <a href="#">网站守则</a> &nbsp;&nbsp; <a href="#">团购说明</a> &nbsp;&nbsp;  <a href="#">转运服务</a>&nbsp;&nbsp;  <a href="#">联系我们</a> </p>
+				<p>©2018 海淘网 <a href="#">沪ICP备14025008号</a> &nbsp;&nbsp; <a href="#"><img src="images/foot/1.gif"></a> &nbsp;&nbsp;&nbsp;&nbsp;<img src="images/foot/2.png"> 网安备31011502002285</p>
+			</div>
+		</div>
+		
+		
+		<script src="js/listpage.js"></script>
+		<script type="text/javascript">
+			
+		
+		</script>
 	</body>
 </html>
