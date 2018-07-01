@@ -1,0 +1,112 @@
+@import "public2";
+#register_box{
+    height:810px;
+    .register{
+        width:430px;
+        margin:50px auto;
+        padding: 15px;
+        background:#fff;
+        .register-head{
+            height:96px;
+            margin-bottom: 20px;
+            text-align:center;
+            a{ 
+                text-align:center;
+                img{
+                    width:96px;
+                    height:96px;
+                    display: inline-block;
+                    border-radius: 50%;
+                }
+            }
+        }
+        .form-group{
+            border-bottom:1px solid #ccc;
+            .input-group{
+                height:30px;
+                border:1px solid #ccc;
+                border-radius:10px;
+                margin-bottom:10px;
+                .input-group-con{
+                    width:82px;
+                    border-right:1px solid #ccc;
+                    border-radius:5px 0 0 5px;
+                    background:#eee;
+                    text-align: center;
+                    font-size:14px;
+                    line-height:30px;
+                    padding:8px;
+                }
+                .form-control{
+                    border:0;
+                    height:26px;
+                    width:320px;
+                }
+                .yanzheng{
+                    border:1px solid #ccc;
+                    border-radius:5px;
+                    width:200px;
+                }
+                
+                
+            }
+            .btn_input{
+                border-color:#fff;
+                .btn-primary{
+                    width:100%;
+                    border:0;
+                    border-radius:5px;
+                    height:32px;
+                    background:blue;
+                    color:#fff;
+                }
+            }
+            .change{
+                text-align: center;
+                margin:20px 0 20px;
+                .btn-default{
+                    color:#333;
+                    padding:8px 10px;
+                    border:1px solid #ccc;
+                    border-radius: 5px;
+                }
+            }
+        }
+        .other_box{
+            padding:10px;
+            font-size: 14px;
+            line-height: 1.42857143;
+            color: #333;
+            .box_con{
+                height:120px;
+                width:130px;
+                float:left;
+                a{
+                    color:#333;
+                    padding-top:30px;
+                    display:inline-block;
+                    width:100%;
+                    position: relative;
+                    text-align: center;
+                    
+                }
+            }
+            .xy_box{
+               .fa-circle{
+                   color: #63b158 !important;
+               }  
+            }
+            .qq{
+               .fa-circle{
+                   color: #039dee;
+               }
+            }
+            .wb{
+                .fa-circle{color: #e8a935;}
+            }
+        }
+       
+    }
+}
+p{margin-bottom:10px}
+

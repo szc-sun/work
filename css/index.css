@@ -197,7 +197,7 @@ ol li{
 
 /*最新发布*/
 .issue_box{width:100%;border-bottom:1px solid #eee;height:140px;background: #fff;}
-.issue_img{width:27%;float:left;margin:15px 10px 20px 15px }
+.issue_img{width:26%;float:left;margin:15px 10px 20px 15px }
 .issue_img img{width:100%;}
 
 .issue_con{width:60%;float:left;margin-top:15px;}

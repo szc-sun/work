@@ -1,0 +1,155 @@
+@charset "utf-8";
+html,body,ul,li,ol,dl,dd,dt,p,h1,h2,h3,h4,h5,h6,form,fieldset,legend,img,input,figure{margin:0;padding:0}
+body{background:#eee;font-family: Arial,'Times New Roman','Microsoft YaHei',SimHei;}
+h1,h2,h3,h4,h5,h6{font-weight:normal;font-size:16px;}
+b,strong{font-weight:normal;}
+em,i{font-style:normal;}
+a,u{text-decoration:none;}
+img{border:0;display:block;}
+ul,ol,li{list-style:none;}
+input{outline:none;}
+.clear-fix:after{content:".";clear:both;display:block;height:0;overflow: hidden;visibility: hidden;}
+
+/*top*/
+#top{
+    height:32px;
+    background:#333;
+    a{color:#ccc;padding:0 10px;}
+    .top_box{
+        height:32px;
+        width:90%;
+        margin:0 auto;
+        .topL{
+            float:left;
+            .dropdown-menu{width:200px;position: absolute;top:32px;z-index:10;background:#fff;display:none}
+        }
+        .topR{
+            float:right;
+            .dropdown-menu{
+                width:120px;
+                position: absolute;
+                top:32px;
+                z-index:10;
+                background:#fff;
+                display:none;
+                li{
+                    width:118px;
+                }
+            }
+        }
+        li{float:left;padding:6px 0 5px}
+        .dropdown-menu li{border-top:1px solid #eee;border-bottom:1px solid #eee;}
+    }
+    .dropdown-menu a{color:#585b48;}
+    .top_line{border-right:1px solid #222;} 
+}
+
+/*logo*/
+#logo_box{
+    width:100%;
+    background:#fff;
+    .btn1,.btn2:hover{cursor:pointer;}
+    .logo{
+        height:100px;
+        width:90%;
+        background:#fff;
+        margin:0 auto;
+        .logo_con{
+            float:left;
+            width:20%;
+            margin:20px 0 0 5%;
+        }
+        .select{
+            float:right;
+            margin:20px 5% 0 0;
+            width:65%;
+            a{font-size:12px;padding:0 5px;}
+            .btn2{
+                float:right;
+                margin-right: 10px;
+                height:32px;
+                width:86px;
+                color:#fff;
+                background: #de3c5b;
+                border:0;
+                border-radius:16px;
+                #tuan_car_num{display:inline-block;height:16px;width:16px;background:#fff;color:#de3c5b;border-radius:10px;}
+            }
+            .select_box{
+                float:right;
+                width:70%;
+                input{width:75%;height:30px;border:1px solid #d00;}
+                .btn1{height:32px;background: #de3c5b;border:0;width:80px;color:#fff;}
+                p{
+                    font-size:14px;
+                    color:#888;
+                    a{
+                        font-size:12px;
+                        color:#888;
+                    }
+                }
+                
+            }
+        }
+        
+    }
+    
+}
+
+/*nav*/
+
+#nav{
+    height:40px;background:#de3c5b;
+    .nav_con{
+        height:40px;
+        line-height:40px;
+        width:90%;
+        margin:0 auto;
+        a{display:inline-block;height:40px;line-height:40px;color:#fff;}
+        li:hover{background:#bf0024}
+        .self{background:#bf0024}
+        .navL{
+            float:left;
+            width:70%;
+            li{float:left;position:relative;padding:0 3% 0}
+        }
+        .navR{
+            float:right;
+            width:30%;
+            li{float:right;padding:0 6% 0}
+            
+        }
+        .tuan_category_ul{border:1px solid #eee;width:120px;position:absolute;top:40px;z-index:10;background:#fff;display:none}
+        .list-group-item{background:#de3c5b;width:120px;text-align:center}
+        .global{border:1px solid #eee;width:120px;position:absolute;top:40px;z-index:10;background:#fff;display:none}
+        .rebate_group{border:1px solid #eee;width:120px;position:absolute;top:40px;z-index:10;background:#fff;display:none}
+    }    
+}
+
+
+
+/*foot*/
+#foot{
+    background:#333;
+    padding:15px 0;
+    text-align:center;
+    color:#fff;
+    .foot_box{
+        height:78px;
+        width:90%;
+        margin:0 auto;
+        p{
+            width:100%;
+            text-align:center;
+            margin-bottom:14px;
+            font-size:14px;
+            color:#fff;
+            img{
+                display:inline-block;
+                height:20px;
+            }
+            a{color:#fff;}    
+        }
+        
+    }
+}
