@@ -195,7 +195,7 @@ $("#yzm").blur(function(){
 
 //	console.log($(this).val(),$(".change_code").html())
 	if($(this).val().toLowerCase()!=$(".change_code").html().toLowerCase()){
-		Ts("两次验证码输入不同!");
+		Ts("两个验证码输入不同!");
 	}
 })
 

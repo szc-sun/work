@@ -151,3 +151,75 @@ $(".select a").hover(function(){
 },function(){
 	$(this).css({"color":"#888","font-size":"12px"});
 })
+
+/*表单验证*/
+//用户名验证
+$("#uname").blur( function () { 
+	var $uname = $("#uname").val();
+	console.log($uname);
+	if($uname.length< 6 || $uname.length>18){
+		Ts("长度应为6~18个字符");
+//		alert("长度应为6~18个字符");
+	}else if(/^\d/.test($uname)){
+		Ts("首字母不能为数字");
+//		alert("首字母不能为数字");
+	}
+	else if(/\W/.test($uname)){
+		Ts("只能由数字、字母、下划线组成");
+//		alert("只能由数字、字母、下划线组成");
+	}
+})
+
+$("#upwd").blur(function(){
+	var $upwd = $("#upwd").val();
+	if($upwd.length< 6 || $upwd.length>18){
+		Ts("长度应为6~18个字符");
+//		alert("长度应为6~18个字符");
+	}else if(/\W/.test($upwd)){
+		Ts("只能由数字、字母、下划线组成");
+//		alert("只能由数字、字母、下划线组成");
+	}
+})
+
+function Ts(str){
+	$(".tishi").html(str);
+	$(".tishi").css("display","block").fadeOut(3000);
+}
+
+$(".change_code").html(testCode());
+$(".change_code").click(function(){
+	$(".change_code").html(testCode());
+})
+$("#yzm").blur(function(){
+
+//	console.log($(this).val(),$(".change_code").html())
+	if($(this).val().toLowerCase()!=$(".change_code").html().toLowerCase()){
+		Ts("两个验证码输入不同!");
+	}
+})
+
+//记住我
+$("#select_zz").click(function(){
+	 $(this).toggleClass("bg_red");
+})
+
+function testCode(){
+	var arr = [];
+	for(var i = 0; i < 4; i++){
+		var tmp =parseInt(Math.random() * 100);
+		if (tmp >= 0 && tmp <= 9) {
+			arr.push(tmp);
+		}else if(tmp >= 65 && tmp <= 90){
+			var bigStr = String.fromCharCode(tmp);
+			arr.push(bigStr);
+		}else if (tmp >= 17 && tmp <= 42) {
+			var smallStr = String.fromCharCode(tmp + 80);
+			arr.push(smallStr);
+		}else{
+			i--;
+		}
+	}
+	var code = arr.join("")
+	return code;
+}
+

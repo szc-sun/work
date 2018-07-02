@@ -277,6 +277,8 @@ input {
           width: 14px;
           height: 14px;
           margin: 0 4px 4px 4px; }
+        #login_box .login .form-group .rber_me .bg_red {
+          background: #d00 !important; }
         #login_box .login .form-group .rber_me #select_zz {
           cursor: pointer;
           position: absolute;
@@ -291,6 +293,21 @@ input {
           max-width: 100%;
           margin-bottom: 5px;
           font-weight: 700; }
+        #login_box .login .form-group .rber_me #select_zz:after {
+          content: '';
+          position: absolute;
+          width: 10px;
+          height: 6px;
+          top: 6px;
+          left: 6px;
+          border: 3px solid #fff;
+          border-top: none;
+          border-right: none;
+          -webkit-transform: rotate(-45deg);
+          -moz-transform: rotate(-45deg);
+          -o-transform: rotate(-45deg);
+          -ms-transform: rotate(-45deg);
+          /* transform: rotate(-45deg); */ }
       #login_box .login .form-group .btn_input {
         border-color: #fff; }
         #login_box .login .form-group .btn_input .btn-primary {
