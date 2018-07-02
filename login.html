@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title></title>
+		<title>登录</title>
 		<link rel="stylesheet" href="dist/css/login.css" />
 		<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css"/>
 		<script src = "js/jquery-1.11.3.js"></script>
@@ -69,7 +69,7 @@
 		</div>
 			
 		<!--logo-->
-		<div id = "logo_box">
+		<div id = "logo_box" class = "clear-fix">
 			<div class = "logo clear-fix">
 				<div class = "logo_con"><a href=""><img src="images/logo.png" alt="" /></a></div>
 				<form action="" class= "select clear-fix">
@@ -200,6 +200,72 @@
 			</div>
 		</div>	
 		
+	
+		<!--登录界面-->	
+		<div id="login_box">
+			<div class="login clear-fix">
+				<p class="login_head">
+					<a href="index.html">
+						<img src="images/register/1.jpg" alt="" />
+					</a>
+				</p>
+				<form action="" method="" class="form-group">
+					<div class = "input-group"><label for="" class = "input-group-con">账号</label><input type="text" class="form-control" name="username" id="username" placeholder="会员名"></div>
+					
+					<div class = "input-group"><label for="" class = "input-group-con">密码</label><input class="form-control" type="password" id="password" name="password" placeholder="密 码"></div>
+					<div class = "input-group btn_input"><input class="form-control yanzheng" name="yzm" type="text" id="yzm" placeholder="验证码"><a href="">刷新验证码</a></div>
+					<div class="rber_me">
+						<span class="select_lable"><input type="checkbox" name="auto" id="auto"><label for="auto" id="select_zz">1</label> </span> &ensp;记住我
+					</div>
+					
+					<div class = "input-group btn_input">
+						<input type="submit" class="btn btn-primary btn-block" onclick="reg_ajax(0);return false;" value="登录"/>
+					</div>
+					
+					<div class="change"><a href="?type=0" class="btn btn-default text-muted">新人注册录</a>   <a href="/login/rst.php" class="btn btn-default text-muted">忘记密码</a></div>
+					
+					<div style = "font-size: 14px;margin-bottom:30px;"> 注册即代表同意并愿意遵守《<a href="http://www.haitao.com/about/19/" target="_blank">海淘网用户守则</a>》</div>
+				</form>
+				<!--其他登录-->
+				<div class = "other_box">
+					<div class="xy_box box_con">
+						<a href="//my.haitao.com/login/sso/login.php?t=xss&amp;fu=http%3A%2F%2Fwww.haitao.com%2Ftuan%2F5640.html">
+							<span class="fa-stack fa-lg text-green">
+				                <i class="fa fa-circle fa-stack-2x"></i>
+				                <i class="fa fa-weixin fa-stack-1x fa-inverse"></i>
+				               
+				            </span><br>
+				          	<small class="text-muted">微信登录</small>
+						</a>		
+					</div>
+					<div class = "qq box_con">
+				 		<a href="//my.haitao.com/login/sso/login.php?t=qss&amp;fu=http%3A%2F%2Fwww.haitao.com%2Ftuan%2F5640.html">
+				 			<span class="fa-stack fa-lg text-blue">
+				                <i class="fa fa-circle fa-stack-2x"></i>
+				                <i class="fa fa-qq fa-stack-1x fa-inverse"></i>
+				            </span><br>
+				            <small class="text-muted">QQ登录</small>
+				 		</a>		
+						
+					</div>
+					<div class="wb box_con">
+						<a href="//my.haitao.com/login/sso/login.php?t=bss&amp;fu=http%3A%2F%2Fwww.haitao.com%2Ftuan%2F5640.html">
+							<span class="fa-stack fa-lg text-gold">
+				                <i class="fa fa-circle fa-stack-2x"></i>
+				                <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
+				            </span><br>
+				            <small class="text-muted">微博登录</small>
+						</a>		
+				
+					</div>
+					
+				</div>
+				
+				
+			</div>
+			
+		</div>
+		
 		
 		
 		
@@ -213,5 +279,7 @@
 			</div>
 		</div>
 
+
+		<script src="js/login.js"></script>
 	</body>
 </html>

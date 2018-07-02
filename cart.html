@@ -2,8 +2,11 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>详情页面</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>购物车</title>
 		<link rel="stylesheet" href="dist/css/cart.css" />
+		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css"/>
 		<script src = "js/jquery-1.11.3.js"></script>
 	</head>
@@ -68,7 +71,7 @@
 		</div>
 			
 		<!--logo-->
-		<div id = "logo_box">
+		<div id = "logo_box" class="clear-fix">
 			<div class = "logo clear-fix">
 				<div class = "logo_con"><a href=""><img src="images/logo.png" alt="" /></a></div>
 				<form action="" class= "select clear-fix">
@@ -134,7 +137,125 @@
 			</div>
 		</div>
 		
-		
+		<!--购物车-->
+		<div class = "cart clear-fix">
+			<!--空购物车-->
+			<div class = "cart_none" style = "display:none;">
+				<p>
+					<span class="fa fa-bug fa-4x"></span>
+				</p>
+			<p>购物车为空</p>
+			</div>
+			
+			<!--有商品时-->
+			
+			<div class="cart_show">
+				<style type="text/css">
+				    body{background:#e9617b;}
+				    .num-btn a{padding:1px 10px;border:1px solid #ddd;color:#666;display:inline-table;}
+				    .num-btn input{width:40px;text-align:center;border:none;border-top:1px solid #ddd;border-bottom:1px solid #ddd;height:24px;line-height:24px;}
+				    .title{height:40px;overflow:hidden;line-height:20px;}
+				</style>
+				<div class="user_remind">
+				                        您好，飞刀问情。您还不是海淘达人，升级达人可省
+				    <b class="flash_price">106元</b> &nbsp;&nbsp; 
+				    <a data-toggle="modal" data-target="#modal" href="/modal/?action=3&amp;them_type=1" class="daren-price">
+				    	<i class="fa fa-question-circle text-gold"></i> 
+				    	<span class="text-white">海淘达人</span>
+				    </a>
+
+				    <a class="pull-right text-muted" href="">
+				    	配送至中国 <span class="fa fa-angle-right"></span></a>
+				</div>
+				
+				<div class = "cart_box clear-fix">
+					<!--头部-->
+					<div class="cart-heading">
+						<span class="select_lable">
+			                <input type="checkbox" name="check_all_store" id="1984"><label for="1984"></label> 
+						</span>
+			          	 海淘网澳洲     
+			          	<a href="//www.haitao.com/tuan/store/1984/" target="_blank" class="pull-right text-gray">
+			          		进入店铺 <span class="fa fa-angle-right"></span>
+			          	</a>
+			        </div>
+			        <!--购物车内容-->
+			        <div class="cart_con clear-fix">
+			        	
+			        	<div class="cart-group-item" id="">
+	                        <div class="row">
+	                            <div class="col-xs-1 col">
+	                            	<span class="select_lable">
+	                            		<input type="checkbox" name="1984" id="check_product_9682">
+	                            		<label for="check_product_9682"></label>
+	                            	</span></div>
+	                            <div class="col-xs-2 col">
+	                                <a href="//www.haitao.com/tuan/9682.html" target="_blank">
+	                                    <img src="http://img5.haitao.com/sku/img/0/9/9682/9682_0.jpg!80" data-original="http://img5.haitao.com/sku/img/0/9/9682/9682_0.jpg!80" onerror="nofind();" style="display: inline;">
+	                                </a>
+	                            </div>
+	                            <div class="col-xs-3  text-left col">
+	                                <p class="title">
+	                                	<a href="//www.haitao.com/tuan/9682.html" target="_blank">羊奶粉3段 6罐整箱 包邮包税 澳洲直邮 karicare可瑞康婴儿羊奶粉3段 900g*6罐  适合1岁以上婴儿</a> 
+	                                </p>
+	                                <p>
+	                                    <span class="text-border text-border-red">包邮</span>                                                                									<span class="text-border text-border-gold">限5件</span> 
+	                                </p>
+	                            </div>
+	                            <div class="col-xs-3 text-muted col">
+	                            	<b class="text-red ">1577元</b>
+	                                <p><span class="daren-price">
+	                                	<i class="fa fa-vimeo text-gold"></i> 省55元</span>
+	                                </p>                            
+	                            </div>
+	                            <div class="col-xs-2 num-btn text-center col">
+	                                <a href="javascript:void(0);" name="1984" id="decrement_9682"> - </a>
+	                                <input name="1984" id="num_9682" type="text" value="1">
+	                                <a href="javascript:void(0);" name="1984" id="increment_9682"> + </a>
+	                            </div>
+	
+	                            <div class="col-xs-1 text-right col">
+	                            	<a href="javascript:void(0);" name="1984" id="del_9682">
+	                            		<span class="fa fa-trash text-gray"></span>
+	                            	</a>
+	                            </div>
+	                        </div>
+	                    </div>
+			        	
+
+			        </div>
+			        
+			        
+			        <!--付款-->
+			        
+			        <div class="order">
+                        <div class="form-inline clear-fix foot10">
+			                <div class="form-group">
+			                    <label for="shipping_chennel" style="font-weight:400">配送方式：</label>
+			                    <select class="form-control" id="shipping_chennel_1984" name="shipping_chennel">
+			                        <option value="275">澳洲-中国专线</option>
+			                    </select>
+			                </div>
+			            </div>
+                    	<p class="well well-sm"><span id="freight_1984">包邮活动！订单满400元，订单重量小于2kg该订单包邮（重量为0的商品不参与此优惠）！超过2kg订单，无法提供包邮，运费按照首重40元/kg，续重20元/0.5kg计算。</span> <a href="//www.haitao.com/tuan/store/view.php?id=1984&amp;type=3" target="_blank">详细</a></p>
+			            <p>
+			            <!-- 商品：<b id="total_price_span_id_1984" class="text-red">0.00</b>元&nbsp;&nbsp;-->
+			          	   商品：<b id="total_sale_price_span_id_1984" class="text-red">0.00</b>元&nbsp;&nbsp;                      
+			       		重量：<span id="shipping_weight_span_id_1984">0.00</span>公斤&nbsp;&nbsp;
+			         	运费：<span id="shipping_price_span_id_1984" class="text-success">0.00</span>元&nbsp;&nbsp;
+			   			总计：<span id="all_price_span_id_1984" class="flash_price">0.00</span>元&nbsp;&nbsp;
+			           	 	<a data-toggle="modal" data-target="#modal" href="/modal/?action=3&amp;them_type=1" class="daren-price"><i class="fa fa-vimeo text-gold"></i><span class=" text-white"> 达人可减<span id="daren_price_off_span_id_1984">0.00</span>元</span></a>&nbsp;&nbsp;
+			                	<input type="submit" name="save_button_id" id="save_button_id_1984" value="进入结算" class="btn btn-danger btn-sm" title="去结算"/>
+			            	</p>
+                    </div>
+
+				</div>
+				
+			</div>
+			
+			
+			
+		</div>
 		
 		
 		

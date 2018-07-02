@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title></title>
+		<title>注册</title>
 		<link rel="stylesheet" href="dist/css/register.css" />
 		<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css"/>
 		<script src = "js/jquery-1.11.3.js"></script>
@@ -69,7 +69,7 @@
 		</div>
 			
 		<!--logo-->
-		<div id = "logo_box">
+		<div id = "logo_box" class = "clear-fix">
 			<div class = "logo clear-fix">
 				<div class = "logo_con"><a href=""><img src="images/logo.png" alt="" /></a></div>
 				<form action="" class= "select clear-fix">
@@ -202,23 +202,24 @@
 		
 		<!--注册界面-->
 		<div id = "register_box">
-		
+			
 			<div class = "register clear-fix">
+				
 				<p class="register-head">
 					<a href="index.html">
 						<img src="images/register/1.jpg" alt="" />
 					</a>
 				</p>
 				
-				<form action="" method="" class="form-group">
-					<div class = "input-group"><label for="" class = "input-group-con">会员名称</label><input type="text" class="form-control" name="username" id="username" placeholder="会员名"></div>
+				<form action="php/register/register.php" method="post" class="form-group">
+					<div class = "input-group"><label for="" class = "input-group-con">会员名称</label><input type="text" class="form-control" name="uname" id="uname" placeholder="会员名"></div>
 					
-					<div class = "input-group"><label for="" class = "input-group-con">登录密码</label><input class="form-control" type="password" id="password" name="password" placeholder="密 码"></div>
+					<div class = "input-group"><label for="" class = "input-group-con">登录密码</label><input class="form-control" type="password" id="upwd" name="upwd" placeholder="密 码"></div>
 					
 					<div class = "input-group"><label for="" class = "input-group-con">确认密码</label><input class="form-control" type="password" id="password_check" name="password2" placeholder="密 码"></div>
-					<div class = "input-group btn_input"><input class="form-control yanzheng" name="yzm" type="text" id="yzm" placeholder="验证码"><a href="">刷新验证码</a></div>
+					<div class = "input-group btn_input"><input class="form-control yanzheng" name="yzm" type="text" id="yzm" placeholder="验证码"><a href="javascript:void(0)" class = "change_code">刷新验证码</a></div>
 					<div class = "input-group btn_input">
-						<input type="submit" class="btn btn-primary btn-block" onclick="reg_ajax(0);return false;" value="提交注册"/>
+						<input type="submit" class="btn btn-primary btn-block" value="提交注册"/>
 					</div>
 					<div class="change"><a href="?type=0" class="btn btn-default text-muted">登录</a>   <a href="/login/rst.php" class="btn btn-default text-muted">忘记密码</a></div>
 					<div style = "font-size: 14px;margin-bottom:30px;"> 注册即代表同意并愿意遵守《<a href="http://www.haitao.com/about/19/" target="_blank">海淘网用户守则</a>》</div>
@@ -274,6 +275,11 @@
 				<p>©2018 海淘网 <a href="#">沪ICP备14025008号</a> &nbsp;&nbsp; <a href="#"><img src="images/foot/1.gif"></a> &nbsp;&nbsp;&nbsp;&nbsp;<img src="images/foot/2.png"> 网安备31011502002285</p>
 			</div>
 		</div>
+		<div class="tishi clear-fix" style="width:150px;height:50px;position:fixed;left:0;top:0;bottom:0;right:0;margin:auto;background:#000;color:#fff;display:none;">
+					
+		</div>
+		
+		<script src="js/register.js"></script>
 
 	</body>
 </html>

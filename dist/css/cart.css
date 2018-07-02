@@ -17,7 +17,7 @@ em, i {
   font-style: normal; }
 
 a, u {
-  text-decoration: none; }
+  text-decoration: none !important; }
 
 img {
   border: 0;
@@ -89,7 +89,8 @@ input {
     height: 100px;
     width: 90%;
     background: #fff;
-    margin: 0 auto; }
+    margin: 0 auto;
+    float: left; }
     #logo_box .logo .logo_con {
       float: left;
       width: 20%;
@@ -198,3 +199,162 @@ input {
         height: 20px; }
       #foot .foot_box p a {
         color: #fff; }
+
+button {
+  width: 88px !important; }
+  button .badge {
+    padding: 0;
+    line-height: 16px; }
+
+.cart {
+  min-height: 800px;
+  width: 970px;
+  margin: 0 auto; }
+  .cart .cart_none {
+    width: 200px;
+    margin: 150px auto; }
+    .cart .cart_none p {
+      margin-bottom: 10px;
+      text-align: center;
+      color: #999; }
+  .cart .cart_show .user_remind {
+    margin: 20px 0;
+    background: #fff;
+    padding: 10px;
+    color: #777;
+    font-size: 14px; }
+    .cart .cart_show .user_remind b {
+      color: #ff4c66 !important;
+      font-size: 18px;
+      font-weight: 600; }
+    .cart .cart_show .user_remind .daren-price {
+      background: #666;
+      border-radius: 2px;
+      color: #fff;
+      padding: 5px 6px;
+      font-size: 12px; }
+      .cart .cart_show .user_remind .daren-price i {
+        color: #e8a935; }
+      .cart .cart_show .user_remind .daren-price .text-white {
+        color: #fff; }
+  .cart .cart_show .cart_box {
+    margin: 10px 0;
+    border: 1px solid #ececec;
+    background: #fff; }
+    .cart .cart_show .cart_box .cart-heading {
+      color: #333;
+      border-color: #ddd;
+      padding: 10px 15px;
+      border-bottom: 1px solid #ececec;
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px; }
+      .cart .cart_show .cart_box .cart-heading .select_lable {
+        width: 28px;
+        height: 28px;
+        position: relative;
+        overflow: hidden;
+        display: inline-table; }
+      .cart .cart_show .cart_box .cart-heading input {
+        margin: 5px 0 0 5px; }
+      .cart .cart_show .cart_box .cart-heading .text-gray {
+        color: #999 !important; }
+    .cart .cart_show .cart_box .cart_con {
+      text-align: center; }
+      .cart .cart_show .cart_box .cart_con .cart-group-item {
+        position: relative;
+        display: block;
+        padding: 10px 15px;
+        margin-bottom: -1px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        color: #777; }
+        .cart .cart_show .cart_box .cart_con .cart-group-item .row {
+          margin-right: -4px;
+          margin-left: -4px; }
+          .cart .cart_show .cart_box .cart_con .cart-group-item .row .col {
+            padding-right: 4px;
+            padding-left: 4px; }
+            .cart .cart_show .cart_box .cart_con .cart-group-item .row .col .title {
+              height: 40px;
+              overflow: hidden;
+              line-height: 20px; }
+            .cart .cart_show .cart_box .cart_con .cart-group-item .row .col p .text-border {
+              padding: 0px 5px;
+              border-radius: 1px; }
+            .cart .cart_show .cart_box .cart_con .cart-group-item .row .col p .text-border-red {
+              border: 1px solid #c30 !important;
+              color: #c30 !important; }
+            .cart .cart_show .cart_box .cart_con .cart-group-item .row .col p .text-border-gold {
+              border: 1px solid #e8a935 !important;
+              color: #e8a935 !important; }
+            .cart .cart_show .cart_box .cart_con .cart-group-item .row .col p .daren-price {
+              background: #666;
+              border-radius: 2px;
+              color: #fff;
+              padding: 5px 6px;
+              font-size: 12px; }
+              .cart .cart_show .cart_box .cart_con .cart-group-item .row .col p .daren-price .text-gold {
+                color: #e8a935; }
+            .cart .cart_show .cart_box .cart_con .cart-group-item .row .col .text-gray {
+              color: #999; }
+    .cart .cart_show .cart_box .order {
+      padding: 15px; }
+      .cart .cart_show .cart_box .order .foot10 {
+        margin-bottom: 10px; }
+      .cart .cart_show .cart_box .order .well-sm {
+        padding: 9px;
+        border-radius: 3px; }
+      .cart .cart_show .cart_box .order .text-red {
+        color: #e93b78 !important; }
+      .cart .cart_show .cart_box .order .flash_price {
+        color: #ff4c66 !important;
+        font-size: 18px;
+        font-weight: 600; }
+      .cart .cart_show .cart_box .order .daren-price {
+        background: #666;
+        border-radius: 2px;
+        color: #fff;
+        padding: 5px 6px;
+        font-size: 12px; }
+        .cart .cart_show .cart_box .order .daren-price .text-gold {
+          color: #e8a935; }
+      .cart .cart_show .cart_box .order .btn-danger:hover {
+        color: #fff;
+        background-color: #c9302c;
+        border-color: #ac2925; }
+
+.select_lable {
+  width: 28px;
+  height: 28px;
+  position: relative;
+  overflow: hidden;
+  display: inline-table; }
+  .select_lable label {
+    cursor: pointer;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 0;
+    left: 0;
+    background: #ddd;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    display: inline-table;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700; }
+  .select_lable label:after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 6px;
+    top: 6px;
+    left: 6px;
+    border: 3px solid #fff;
+    border-top: none;
+    border-right: none;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg); }
