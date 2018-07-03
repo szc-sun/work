@@ -50,17 +50,27 @@ input {
     margin: 0 auto; }
     #top .top_box .topL {
       float: left; }
+      #top .top_box .topL .drop_con {
+        position: relative; }
       #top .top_box .topL .dropdown-menu {
+        margin: 0;
+        padding: 0;
         width: 200px;
         position: absolute;
         top: 32px;
         z-index: 10;
         background: #fff;
         display: none; }
+        #top .top_box .topL .dropdown-menu a {
+          width: 100%; }
     #top .top_box .topR {
       float: right; }
+      #top .top_box .topR .drop_con {
+        position: relative; }
       #top .top_box .topR .dropdown-menu {
-        width: 120px;
+        margin: 0;
+        padding: 0;
+        min-width: 120px !important;
         position: absolute;
         top: 32px;
         z-index: 10;
@@ -68,6 +78,8 @@ input {
         display: none; }
         #top .top_box .topR .dropdown-menu li {
           width: 118px; }
+          #top .top_box .topR .dropdown-menu li a {
+            width: 100%; }
     #top .top_box li {
       float: left;
       padding: 6px 0 5px; }
@@ -137,6 +149,8 @@ input {
           #logo_box .logo .select .select_box p a {
             font-size: 12px;
             color: #888; }
+          #logo_box .logo .select .select_box p .a_boder {
+            border-right: 1px solid #d00; }
 
 /*nav*/
 #nav {
@@ -162,19 +176,22 @@ input {
       #nav .nav_con .nav_box .tuan_index {
         width: 20%; }
       #nav .nav_con .nav_box .drop_con .tuan_category_ul {
-        width: 100%;
+        margin: 0;
+        padding: 0;
+        min-width: 100%;
         position: absolute;
         top: 40px;
         z-index: 10;
-        background: #fff;
         display: none; }
         #nav .nav_con .nav_box .drop_con .tuan_category_ul a {
           font-size: 16px;
           color: #fff;
           display: block; }
+        #nav .nav_con .nav_box .drop_con .tuan_category_ul a:hover {
+          background: transparent !important; }
       #nav .nav_con .nav_box .drop_con .list-group-item {
         background: #fa3779;
-        width: 80%;
+        width: 100%;
         padding: 0 10% 0;
         text-align: left; }
 

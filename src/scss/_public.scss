@@ -21,12 +21,23 @@ input{outline:none;}
         margin:0 auto;
         .topL{
             float:left;
-            .dropdown-menu{width:200px;position: absolute;top:32px;z-index:10;background:#fff;display:none}
+            .drop_con{
+                position:relative;
+            }
+            .dropdown-menu{margin:0;padding:0;width:200px;position: absolute;top:32px;z-index:10;background:#fff;display:none;
+                a{
+                    width:100%
+                }
+            }
         }
         .topR{
             float:right;
+            .drop_con{
+                position:relative;
+            }
             .dropdown-menu{
-                width:120px;
+                margin:0;padding:0;
+                min-width:120px !important;
                 position: absolute;
                 top:32px;
                 z-index:10;
@@ -34,6 +45,9 @@ input{outline:none;}
                 display:none;
                 li{
                     width:118px;
+                    a{
+                        width:100%
+                    }
                 }
             }
         }
@@ -88,6 +102,9 @@ input{outline:none;}
                         font-size:12px;
                         color:#888;
                     }
+                    .a_boder{
+                        border-right: 1px solid #d00;
+                    }
                 }
                 
             }
@@ -120,10 +137,12 @@ input{outline:none;}
             .tuan_index{width:20%;}
             .drop_con{
                 .tuan_category_ul{
-                    width:100%;
+                    margin:0;
+                    padding:0;
+                    min-width:100%;
                     position:absolute;
                     top:40px;z-index:10;
-                    background:#fff;
+                    
                     display:none;
                     a{
                         font-size: 16px;
@@ -131,9 +150,10 @@ input{outline:none;}
                         display: block;
                     }
                    // li:hover{background:#bf0024}
+                   a:hover{background: transparent !important;}
                    
                 }
-                .list-group-item{background:#fa3779;width:80%;padding:0 10% 0;text-align:left}
+                .list-group-item{background:#fa3779;width:100%;padding:0 10% 0;text-align:left}
                     
             }
    

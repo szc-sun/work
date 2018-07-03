@@ -6,9 +6,13 @@
 		<link rel="stylesheet" href="dist/css/detailpage.css" />
 		<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css"/>
 		<script src = "js/jquery-1.11.3.js"></script>
+		<script type="text/javascript" src="js/ajax.js" ></script>
+		
+		
 	</head>
 	<body>
 		<!--top-->
+		<div id = "gid" style = "display: none;">1</div>
 		<div id = "top">
 			<div class = "top_box clear-fix">
 				<ul class = "topL">
@@ -140,7 +144,7 @@
 				<div class = "goods_sold_con clear-fix">
 					<!--左-->
 					<div class="goods_sold_left clear-fix">
-						<p class="text-center"><img src="images/detailpage/1.jpg"  style="display: inline;"></p>
+						<p class="text-center"><img src=""  style="display: inline;" class = "img1"></p>
 						<div class="clear-fix  text-center foot10">
 							<a data-toggle="modal" data-target="#modal" href="#" class="btn btn-sm btn-default"><span class="fa fa-plus-circle text-muted"> 收入文章</span></a>&nbsp;&nbsp;
 							<a href="javascript:void(0)" onclick="collect(5,5640,1);return false;" class="btn btn-sm btn-default"><span class="fa fa-star text-muted " id="collect_fa_5_5640"> 收藏 204</span></a>&nbsp;&nbsp;
@@ -154,41 +158,47 @@
 					<div class="goods_sold_right clear-fix">
 						<div class="goods_right_box clear-fix">
 							<!--intro-->
-							<p class=" text-muted">品牌：<a href="/brand/390/" target="_blank" class="text-warning">贝拉米</a> </p><h1><p class="text-red">2段奶粉 6罐整箱 包邮包税 </p>澳洲 BELLAMY S 贝拉米有机奶粉2段 6个月以上 900g*6罐 整箱</h1>
+							<p class=" text-muted">品牌：<a href="/brand/390/" target="_blank" class="text-warning gname"><!--贝拉米--></a> </p><h1 class = "desc"><p class="text-red">2段奶粉 6罐整箱 包邮包税 </p>澳洲 BELLAMY S 贝拉米有机奶粉2段 6个月以上 900g*6罐 整箱</h1>
 							<div class="top20 price_show">
 								团购价格：
-								<span class="flash_price">￥1250元</span>   
+								<span class="flash_price price1"><!--￥1250元--></span>   
 								<span class="efp">包邮</span>    
-								<p class="top10">达人价格：<span class="flash_price">￥1199元</span>&nbsp;&nbsp;再省51元  &nbsp;&nbsp;<a data-toggle="modal" data-target="#modal" href="/daren/intro.php?them_type=1" class="daren-price"><i class="fa fa-question-circle text-gold"></i> <span class="text-white">海淘达人</span></a></p>
+								<p class="top10">达人价格：<span class="flash_price price2">￥1199元</span>&nbsp;&nbsp;再省51元  &nbsp;&nbsp;<a data-toggle="modal" data-target="#modal" href="/daren/intro.php?them_type=1" class="daren-price"><i class="fa fa-question-circle text-gold"></i> <span class="text-white">海淘达人</span></a></p>
 							</div>
-							<p class="remark">BELLAMY S有机农场位于澳大利亚的一个美丽的小岛——塔斯马尼亚岛上，占地30000亩。整个农场由澳大利亚有机认证机构NASAA监控，所有奶牛均不可人工喂养饲料，整个农场的牧草均不可用杀虫剂，也不可以用化肥，奶牛也不可以使用任何药物包括抗生素，而制造奶粉的机械有特殊要求，由于NASAA有机认证的要求如此之高，包括澳大利亚及新西兰只有BELLAMY S奶粉拿到有机奶粉证书。</p>
+							<p class="remark"><!--BELLAMY S有机农场位于澳大利亚的一个美丽的小岛——塔斯马尼亚岛上，占地30000亩。整个农场由澳大利亚有机认证机构NASAA监控，所有奶牛均不可人工喂养饲料，整个农场的牧草均不可用杀虫剂，也不可以用化肥，奶牛也不可以使用任何药物包括抗生素，而制造奶粉的机械有特殊要求，由于NASAA有机认证的要求如此之高，包括澳大利亚及新西兰只有BELLAMY S奶粉拿到有机奶粉证书。--></p>
 							<p class="text-muted">发货商家：海淘网澳洲</p>
 							<p class="text-muted">发货地点：澳洲 </p>
 							<p class="text-muted">发货时间：一般第二个工作日配货</p>
 							
 							<div class="product_group_more clear-fix">
 								
-								<a href="3720.html" class=" "><img src="http://img5.haitao.com/sku/img/0/3/3720/3720_0.jpg!80">&nbsp;1段 900g</a>
+								<a href="javascript:void(0)" class=" " id = "a1"><img src="http://img5.haitao.com/sku/img/0/3/3720/3720_0.jpg!80"><!--&nbsp;1段 900g--></a>
 									
 									
-								<a href="5639.html" class=" "><img src="http://img5.haitao.com/sku/img/0/5/5639/5639_0.jpg!80">&nbsp;1段 900g*6</a>
+								<a href="javascript:void(0)" class=" " id = "a2"><img src="http://img5.haitao.com/sku/img/0/5/5639/5639_0.jpg!80"><!--&nbsp;1段 900g*6--></a>
 									
 									
-								<a href="3721.html" class=" "><img src="http://img5.haitao.com/sku/img/0/3/3721/3721_0.jpg!80">&nbsp;2段 900g</a>
+								<a href="javascript:void(0)" class=" " id = "a3"><img src="http://img5.haitao.com/sku/img/0/3/3721/3721_0.jpg!80"><!--&nbsp;2段 900g--></a>
 									
 									
-								<a href="5640.html" class="  on "><img src="http://img5.haitao.com/sku/img/0/5/5640/5640_0.jpg!80">&nbsp;2段 900g*6</a>
+								<a href="javascript:void(0)" class="on" id = "a4"><img src="http://img5.haitao.com/sku/img/0/5/5640/5640_0.jpg!80"><!--&nbsp;2段 900g*6--></a>
 									
 									
-								<a href="3722.html" class=" "><img src="http://img5.haitao.com/sku/img/0/3/3722/3722_0.jpg!80">&nbsp;3段 900g</a>
+								<a href="javascript:void(0)" class=" " id = "a5"><img src="http://img5.haitao.com/sku/img/0/3/3722/3722_0.jpg!80"><!--&nbsp;3段 900g--></a>
 									
 									
-								<a href="5641.html" class=" "><img src="http://img5.haitao.com/sku/img/0/5/5641/5641_0.jpg!80">&nbsp;贝拉米3段*6罐</a>
+								<a href="javascript:void(0)" class=" " id = "a6"><img src="http://img5.haitao.com/sku/img/0/5/5641/5641_0.jpg!80"><!--&nbsp;贝拉米3段*6罐--></a></br>
+								
 								
 							</div>
-							
+							<p class="count clear-fix">
+								<span class = "num"></span>
+								<i class="numup">+</i>
+								<i class ="numdown">-</i>
+							</p>
 							<p class="add_cart">
-							<a href="javascript:void(0)" onclick="add_car('5640', '1984');return false;" title="" class="btn btn-danger btn-lg btn-car"><span class="fa fa-shopping-cart"> 放入购物车 </span></a>
+								
+								<a href="javascript:void(0)" title="" class="btn btn-danger btn-lg btn-car"><span class="fa fa-shopping-cart"> 放入购物车 </span></a>
 							 &nbsp;&nbsp;<span class="text-muted fa fa-plane"> 包邮商品 无需运费</span> </p>
 						</div>
 					</div>
@@ -203,11 +213,11 @@
 				<div class="goods_detail_left clear-fix">
 					<div class="detail_heading">商品详情</div>
 					<div class="detail_body">
-						<p class="text-center detail_one"><a href="http://www.haitao.com/about/14/" target="_blank"><img src="images/detailpage/2.jpg"></a></p>
-						<img src="images/detailpage/3.jpg"  style="display: inline;">
-						<img src="images/detailpage/4.jpg" style="display: inline;">
-						<img src="images/detailpage/5.jpg" style="display: inline;">
-						<img src="images/detailpage/6.jpg" style="display: inline;">
+						<p class="text-center detail_one"><a href="http://www.haitao.com/about/14/" target="_blank"><img src="" class="img2"></a></p>
+						<img src="" class="img3"  style="display: inline;">
+						<img src="" class="img4" style="display: inline;">
+						<img src="" class="img5" style="display: inline;">
+						<img src="" class="img6" style="display: inline;">
 					</div>
 				</div>
 				<!--右侧广告-->
@@ -723,6 +733,10 @@
 
 		</div>
 		
+		
+    	<script type="text/javascript" src="js/detailpage.js" ></script>
+    	<script type="text/javascript" src="js/head.js" ></script>
+    	
 		
 		
 	</body>
