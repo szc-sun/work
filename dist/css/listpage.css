@@ -104,7 +104,8 @@ input {
       #logo_box .logo .select .btn2 {
         float: right;
         margin-right: 10px;
-        height: 32px;
+        padding-top: 8px;
+        height: 24px;
         width: 86px;
         color: #fff;
         background: #de3c5b;
@@ -295,6 +296,9 @@ input {
         height: 20px; }
       #foot .foot_box p a {
         color: #fff; }
+
+.text-gold {
+  color: #ff4c66 !important; }
 
 @media all and (min-width: 992px) and (max-width: 1400px) {
   dl {

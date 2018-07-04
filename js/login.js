@@ -108,18 +108,21 @@ function worldClockZone(){
 	$("#losangeles_time").html(calcTime('美国洛杉矶', '-8'));
 	$("#frankfurt_time").html(calcTime('德国法兰克福', '+1'));
 	$("#tokyo_time").html(calcTime('日本大阪', '+9'));
-	$("#london_time").html(calcTime('澳洲悉尼', '+1'));
-	$("#sydney_time").html(calcTime('英国伦敦', '+11'));
+	$("#london_time").html(calcTime('英国伦敦', '+1'));
+	$("#sydney_time").html(calcTime('澳洲悉尼', '+11'));
 	/*document.getElementById('localutc_time').innerHTML = "本地时间：" + (new Date()).toLocaleString(); 
 ////document.getElementById('portland_time').innerHTML = calcTime('美国波特兰', '-8'); 
 	document.getElementById('losangeles_time').innerHTML = calcTime('美国洛杉矶', '-8'); 
 	document.getElementById('frankfurt_time').innerHTML = calcTime('德国法兰克福', '+1'); 
 	document.getElementById('tokyo_time').innerHTML = calcTime('日本大阪', '+9'); 
-	document.getElementById('london_time').innerHTML =calcTime('澳洲悉尼', '+1'); 
-	document.getElementById('sydney_time').innerHTML = calcTime('英国伦敦', '+11'); */
+	document.getElementById('london_time').innerHTML =calcTime('英国伦敦', '+1'); 
+	document.getElementById('sydney_time').innerHTML = calcTime('澳洲悉尼', '+11'); */
 	setTimeout("worldClockZone()", 1000) 
 }
 	
+$(".btn2").click(function(){
+	$(location).attr('href', 'cart.html');
+})
 
 
 //回到顶部

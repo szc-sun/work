@@ -1,3 +1,4 @@
+//获取数据库的购物车信息
 $.ajax({
 	type : "get",
 	url : "php/cart/cartshow.php",
@@ -5,18 +6,19 @@ $.ajax({
 		"table" : "cart"
 	},
 	success : function(response){
-		console.log(typeof response);
-		console.log(response);
+//		console.log(typeof response);
+//		console.log(response);
 		var arr = JSON.parse(response);
-		console.log(typeof arr);
-		console.log(arr[0].gname);
+//		console.log(typeof arr);
+//		console.log(arr[0].gname);
+		//显示到页面
 		$.each(arr,function(index,value){
 			var $str =  `
 			
 			<div class="cart-group-item" id="">
 							
 	                        <div class="row">
-	                        <div id = "gid" style = "dispaly:none">${arr[index].gid}</div>
+	                        <div id = "gid" style = "display:none;">${arr[index].gid}</div>
 	                            <div class="col-xs-1 col">
 	                            	<span class="select_lable">
 	                            		<input type="checkbox" name="1984" id="check_product_1">
@@ -57,34 +59,36 @@ $.ajax({
 			
 			`;
 			$($str).appendTo($(".cart_con"));
-		})				
+			
+		})	
+		$(".cart_none").css("display","none");
+		$(".cart_show").css("display","block");
 	}
 });
 
 //件数加减
 
 
-
-
 function numdown(){
-	console.log($("#nums").val())
+//	console.log($("#nums").val())
 	var tmp = parseInt($("#nums").val()) - 1;
 	$("#nums").val(tmp);
 	updateCart(tmp);
 	
 }
 function numup(){
-	console.log($("#nums").val())
+//	console.log($("#nums").val())
 	var tmp = parseInt($("#nums").val()) + 1;
 	$("#nums").val(tmp);
 	updateCart(tmp);
 }
 
+
 function updateCart(num){
 	var $gid = $("#gid");
 	var $nums =$("#nums");
 	var sendM = `gid=${$gid.html()}&nums=${num}`;
-	console.log(sendM);
+//	console.log(sendM);
 	$.ajax({
 			type : "post",
 			url : "php/cart/update.php?date="+new Date().getTime(),
@@ -97,7 +101,7 @@ function updateCart(num){
 		}); 
 }
 
-
+//删除
 function Del(){
 	var war = confirm("确定删除吗?")
 	if(war == true){
@@ -108,7 +112,7 @@ function Del(){
 function delCart(){
 	var $gid = $("#gid");
 	var sendM = `gid=${$gid.html()}`;
-	console.log(sendM);
+//	console.log(sendM);
 	$.ajax({
 			type : "post",
 			url : "php/cart/delete.php?date="+new Date().getTime(),
@@ -119,4 +123,16 @@ function delCart(){
 				
 			}
 		}); 
+}
+
+
+
+$(".select_lable label").click(function(){
+//	console.log($(".select_lable label"));
+	 $(this).toggleClass("bg_red");
+	 choose();
+})
+
+function choose(){
+	$(".row .select_lable label").toggleClass("bg_red");
 }

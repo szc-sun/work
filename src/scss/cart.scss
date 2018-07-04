@@ -6,6 +6,9 @@ button{
         line-height:16px;
     }
 }
+.btn2{
+    height:32px !important;
+}
 .cart{
     min-height:800px;
     width: 970px;
@@ -16,7 +19,7 @@ button{
         p{
             margin-bottom:10px;
             text-align:center;
-            color:#999;
+            color:#333;
         }
     }
     
@@ -205,3 +208,5 @@ button{
     }
               
 }
+
+.bg_red{background: #d00 !important;}

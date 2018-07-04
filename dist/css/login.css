@@ -104,8 +104,9 @@ input {
         padding: 0 5px; }
       #logo_box .logo .select .btn2 {
         float: right;
+        padding-top: 8px;
         margin-right: 10px;
-        height: 32px;
+        height: 24px;
         width: 86px;
         color: #fff;
         background: #de3c5b;

@@ -116,8 +116,9 @@ input {
         padding: 0 5px; }
       #logo_box .logo .select .btn2 {
         float: right;
+        padding-top: 8px;
         margin-right: 10px;
-        height: 32px;
+        height: 24px;
         width: 86px;
         color: #fff;
         background: #de3c5b;
@@ -223,6 +224,9 @@ button {
     padding: 0;
     line-height: 16px; }
 
+.btn2 {
+  height: 32px !important; }
+
 .cart {
   min-height: 800px;
   width: 970px;
@@ -233,7 +237,7 @@ button {
     .cart .cart_none p {
       margin-bottom: 10px;
       text-align: center;
-      color: #999; }
+      color: #333; }
   .cart .cart_show .user_remind {
     margin: 20px 0;
     background: #fff;
@@ -375,3 +379,6 @@ button {
     -o-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
     transform: rotate(-45deg); }
+
+.bg_red {
+  background: #d00 !important; }
