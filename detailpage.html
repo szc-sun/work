@@ -11,6 +11,7 @@
 		
 	</head>
 	<body>
+		
 		<!--top-->
 		<div id = "gid" style = "display: none;">1</div>
 		<div id = "top">
@@ -137,6 +138,11 @@
 				</ul>
 			</div>
 		</div>
+		
+		
+		<div class="big_pic" style="position: absolute;top: 200px;left: 45%;width: 450px;height:450px;overflow: hidden;border: 2px solid #CCC;display: none;">
+			<img src="" class="big_img img1" style="position: absolute;top: -30px;left: -80px;"/>
+		</div>
 		<!--goodsdetail-->
 		<div class = "shop_goods clear-fix">
 			<!--上部详情-->
@@ -144,7 +150,12 @@
 				<div class = "goods_sold_con clear-fix">
 					<!--左-->
 					<div class="goods_sold_left clear-fix">
-						<p class="text-center"><img src=""  style="display: inline;" class = "img1"></p>
+						<p class="text-center big_box" style = "background:#d00;position:relative">
+							<img src=""  style="display: inline;" class = "img1">
+							<img src=""   class = "img1 mark" style="display:inline;position:absolute;left:0;top:0;z-index:10;opacity: 0;">
+							<span class = "float" style="position: absolute;left: 0;top:0;z-index:1;width:100px;height:100px;background:#ccc;display:none;opacity:0.5;"></span>
+						</p>
+						
 						<div class="clear-fix  text-center foot10">
 							<a data-toggle="modal" data-target="#modal" href="#" class="btn btn-sm btn-default"><span class="fa fa-plus-circle text-muted"> 收入文章</span></a>&nbsp;&nbsp;
 							<a href="javascript:void(0)" onclick="collect(5,5640,1);return false;" class="btn btn-sm btn-default"><span class="fa fa-star text-muted " id="collect_fa_5_5640"> 收藏 204</span></a>&nbsp;&nbsp;
@@ -733,7 +744,7 @@
 
 		</div>
 		
-		
+		<script type="text/javascript" src="js/jquery.fly.js"></script>
     	<script type="text/javascript" src="js/detailpage.js" ></script>
     	<script type="text/javascript" src="js/head.js" ></script>
     	

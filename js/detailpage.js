@@ -77,8 +77,42 @@ function addCart(){
 	
 }*/
 
-$(".btn-car").click(function(){
+$("<div>", {
+  		"class": "btnCart fa fa-cart-plus",
+  		"style":"position: fixed;font-size:26px;right: 10px;bottom: 50%;width: 40px;height: 60px;line-height: 60px;opacity: 0.9;border-radius: 20px;color: #fff;text-align: center;background: #d00;cursor: pointer;z-index: 1000;overflow: hidden;",
+  		
+}).appendTo($("body"));
+
+
+$(".btn-car").click(function(e){
 	addCart();
+	
+	
+	
+	var cloneImg = $(".img1").clone().css({width:50,height:50});
+	cloneImg.fly({
+						start : {
+							top : e.clientY,
+							left : e.clientX
+						},
+						end :{
+							top : $(".btnCart").offset().top,
+							left : $(".btnCart").offset().left,
+							width:0,
+							height:0
+						},
+						autoPlay : true,
+						onEnd : function(){
+							
+					cloneImg.remove();
+						}
+					})
+
+	
+	
+	
+	
+	
 })
 function addCart(){
 	//获取商品id,名字,价格,优惠价格,件数;
@@ -107,4 +141,54 @@ function addCart(){
 	
 }
 	
-console.log($("h1").text());
+//console.log($("h1").text());
+glass();
+function glass(){
+	var oBigBox = document.querySelector(".big_box");
+	var oMark = document.querySelector(".mark");
+	var oFloat = document.querySelector(".float");
+	var oBigPic = document.querySelector(".big_pic");
+	var oBigImg = document.querySelector(".big_img");
+	oMark.onmouseenter = function(){
+		oFloat.style.display = 'block';
+		oBigPic.style.display = 'block';
+	}
+	oMark.onmouseleave = function(){
+		oFloat.style.display = 'none';
+		oBigPic.style.display = 'none';
+	}
+	oMark.onmousemove = function(evt){
+		var e = evt || window.event;
+		let left = e.pageX - oBigBox.offsetLeft - oMark.offsetLeft - oFloat.offsetWidth / 2;
+		let top = e.pageY - oBigBox.offsetTop - oMark.offsetTop - oFloat.offsetHeight / 2;
+		//设置边界
+		if(left <= 0){
+			left = 0;
+		}else if(left >= oMark.offsetWidth - oFloat.offsetWidth){
+			left = oMark.offsetWidth - oFloat.offsetWidth;
+		}
+		if(top <= 0){
+			top = 0;
+		}else if(top >= oMark.offsetHeight - oFloat.offsetHeight){
+			top = oMark.offsetHeight - oFloat.offsetHeight;
+		}
+		oFloat.style.left = left + 'px';
+		oFloat.style.top = top + 'px';
+		
+		
+		//滑块在小图的移动比例
+		let pX = left / (oMark.offsetWidth - oFloat.offsetWidth);
+		let pY = top / (oMark.offsetHeight - oFloat.offsetHeight);
+		//设置大图的坐标值
+		oBigImg.style.left = - pX * (oBigImg.offsetWidth - oBigPic.offsetWidth) + 'px';
+		oBigImg.style.top = - pY * (oBigImg.offsetHeight - oBigPic.offsetHeight) + 'px';
+	}
+	
+	
+}
+
+
+	
+	
+
+
